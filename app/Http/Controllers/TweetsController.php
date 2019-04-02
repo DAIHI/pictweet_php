@@ -24,7 +24,6 @@ class TweetsController extends Controller
 
     public function create()
     {
-        eval(\Psy\SH());
         return view('tweets.create');
     }
 

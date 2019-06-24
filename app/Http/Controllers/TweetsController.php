@@ -60,7 +60,7 @@ class TweetsController extends Controller
 
     public function destroy($tweet_id)
     {
-        if (Auth::user()->id  == Tweet::find($tweet_id)->user_id) {
+        if (Auth::user()->id == Tweet::find($tweet_id)->user_id) {
           Tweet::destroy($tweet_id);
         }
 
